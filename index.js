@@ -10,7 +10,7 @@ checkInput();
 
 function checkInput() {
   // check if the input matches the format WWxHH
-  if (argv[2].match(/[0-9]{1,2}x|X[0-9]{1,2}/)) {
+  if (argv[2] && argv[2].match(/[0-9]{1,2}x|X[0-9]{1,2}/)) {
     width = Number(argv[2].slice(0, 2));
     height = Number(argv[2].slice(3, 5));
     outputColor = randomColor({
