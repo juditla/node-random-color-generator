@@ -17,3 +17,9 @@ node index.js blue dark
 ```
 
 the generated block is in a random blue color with dark luminosity
+
+by adding a size in the format WWxHH or WxH the block of hashes adjusts in size
+
+```
+node index.js 29x7 yellow light
+```
